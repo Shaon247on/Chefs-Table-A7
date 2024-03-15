@@ -26,7 +26,8 @@
             "1/4 cup olive oil",
             "3 cloves garlic",
             "Red pepper flakes",
-            "Parmesan cheese, grated "
+            "Parmesan cheese, grated",
+            "Fresh herbs"
         ],
         "preparing_time": 25,
         "calories": 250,
@@ -54,9 +55,11 @@
         "ingredients": [
             "4 tomatoes",
             "200 g fresh mozzarella",
-            "1/4 cup fresh basil leaves",
-            "2 tbsp balsamic vinegar",
-            "1 tablespoon (15ml) balsamic vinegar or lemon juice"
+            "1/4 cup fresh basil leaves",            
+            "1/4 cup thinly sliced red onion",
+            "1 tablespoon) balsamic vinegar",
+            "Salt and black pepper to taste",
+            "Crumbled feta cheese"
         ],
         "preparing_time": 15,
         "calories": 180,
@@ -65,13 +68,13 @@
     {
         "recipe_id": 5,
         "recipe_name": "Shrimp Scampi",
-        "short_description": "Delicious shrimp cooked in garlic and lemon butter sauce.",
+        "short_description": "Delicious shrimp sautéed in garlic butter sauce, served over pasta. A classic seafood dish bursting with flavor.",
         "ingredients": [
             "500 g shrimp",
             "4 cloves garlic",
             "1/4 cup butter",
             "1 lemon",
-            "Salt and freshly ground black pepper to taste"
+            "Salt and black pepper"
         ],
         "preparing_time": 20,
         "calories": 280,

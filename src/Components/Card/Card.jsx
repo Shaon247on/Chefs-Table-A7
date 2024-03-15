@@ -1,11 +1,9 @@
 import PropTypes from 'prop-types';
-const Card = ({card}) => {
-    console.log(card)
+const Card = ({card,handleToCook}) => {
     const { recipe_name, short_description, ingredients, preparing_time, calories, recipe_image } = card
-    console.log(recipe_image)
     return (
         <div>
-            <div className="rounded-2xl  bg-base-100 shadow-xl border-[#28282833] border-2 mx-6">
+            <div className="rounded-2xl w-[360px] bg-base-100 shadow-xl border-[#28282833] border-2 mx-6 my-5">
                 <figure className="p-6">
                     <img className="rounded-2xl" src={recipe_image} alt="No Image">
                     </img>
@@ -32,8 +30,7 @@ const Card = ({card}) => {
                                 <p>{calories} calories</p>
                             </div>
                         </div>
-                        <button
-                            className="bg-[#0BE58A] text-[#150B2B] border-none w-32 lg:w-48 py-4 rounded-[30px] text-[15px] lg:text-[20px] font-semibold mb-6">Want to Cook</button>
+                        <button onClick={()=>handleToCook(card)} className="bg-[#0BE58A] text-[#150B2B] border-none w-32 lg:w-48 py-4 rounded-[30px] text-[15px] lg:text-[20px] font-semibold mb-12">Want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -42,6 +39,8 @@ const Card = ({card}) => {
 };
 
 Card.propTypes= {
-    card: PropTypes.object.isRequired
+    card: PropTypes.object.isRequired,
+    handleToCook: PropTypes.func.isRequired,
+    
 }
 export default Card;
