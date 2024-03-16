@@ -16,14 +16,10 @@ function App() {
     setRemove(newRemovedList)
   }
 
-  const handleToCook = (card) => {
-    if (card.recipe_id !== toCook.recipe_id) {
+  const handleToCook = (card) => {     
       const newToCook = [...toCook, card]
       setToCook(newToCook)
-    }
-    alert("This Item has been already selected")
-    const newToCook2 = [toCook]
-      setToCook(newToCook2)
+   
   }
   return (
     <>
