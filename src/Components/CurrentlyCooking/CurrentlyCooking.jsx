@@ -1,22 +1,23 @@
 import PropTypes from 'prop-types';
-const CurrentlyCooking = ({ cook }) => {
-    const { recipe_name, preparing_time, calories } = cook
+const CurrentlyCooking = ( {moved} ) => {
+    const name = moved[0].recipe_name
+    const time = moved[0].preparing_time
+    const calories = moved[0].calories
 
     return (
         <>
         <tr className='mt-5'>
             <td>{ }</td>
-            <td>{recipe_name}</td>
-            <td>{preparing_time} minutes</td>
+            <td>{name}</td>
+            <td>{time} minutes</td>
             <td>{calories} calories</td>
-        </tr>
-        <div>
-            
-        </div>
+            <td><button className="btn text-[#150B2B] rounded-3xl bg-[#0BE58A]">Currently Cooking</button></td>
+        </tr>   
+
         </>
     );
 };
 CurrentlyCooking.propTypes = {
-    cook: PropTypes.object.isRequired,
+    moved: PropTypes.array.isRequired,
 }
 export default CurrentlyCooking;
