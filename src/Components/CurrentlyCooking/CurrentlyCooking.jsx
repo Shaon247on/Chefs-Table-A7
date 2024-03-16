@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-const CurrentlyCooking = ( {moved} ) => {
+const CurrentlyCooking = ( {moved, index} ) => {
     const name = moved[0].recipe_name
     const time = moved[0].preparing_time
     const calories = moved[0].calories
@@ -7,7 +7,7 @@ const CurrentlyCooking = ( {moved} ) => {
     return (
         <>
         <tr className='mt-5'>
-            <td>{ }</td>
+            <td>{index+1}</td>
             <td>{name}</td>
             <td>{time} minutes</td>
             <td>{calories} calories</td>
@@ -19,5 +19,6 @@ const CurrentlyCooking = ( {moved} ) => {
 };
 CurrentlyCooking.propTypes = {
     moved: PropTypes.array.isRequired,
+    index: PropTypes.number.isRequired,
 }
 export default CurrentlyCooking;

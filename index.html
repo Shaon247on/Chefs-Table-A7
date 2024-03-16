@@ -8,13 +8,23 @@
   <title>Flavor Fête</title>
 
   <style>
-    .font-fira{
+    .font-fira {
       font-family: "Fira Sans", sans-serif;
     }
   </style>
 </head>
 
 <body>
+
+  <div class="toast toast-top toast-end hidden" id="alert">
+    <div class="alert bg bg-red-100 flex items-center justify-center gap-1">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-600">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+      </svg>      
+      <span class="">This item has already been selected</span>
+    </div>
+  </div>
+  
   <header>
     <!-- nav bar section -->
     <nav class="mx-2 lg:mx-[105px] mt-9">
@@ -94,9 +104,11 @@
               expertly prepared by top chefs from around the world</p>
             <div class=" flex gap-5 justify-center items-center">
               <button
-                class="bg-[#0BE58A] text-[#150B2B] border-none w-36 lg:w-48 py-4 rounded-[30px] text-base lg:text-[20px] font-semibold">Explore Now</button>
+                class="bg-[#0BE58A] text-[#150B2B] border-none w-36 lg:w-48 py-4 rounded-[30px] text-base lg:text-[20px] font-semibold">Explore
+                Now</button>
               <button
-                class="bg-none border-2 border-white p-[11px] w-36 lg:w-48 py-4 rounded-[30px] text-base lg:text-[20px] font-semibold">Our Feedback</button>
+                class="bg-none border-2 border-white p-[11px] w-36 lg:w-48 py-4 rounded-[30px] text-base lg:text-[20px] font-semibold">Our
+                Feedback</button>
             </div>
           </div>
         </div>
@@ -106,19 +118,20 @@
   <main>
     <div class="mt-20 text-center">
       <h2 class="text-[40px] font-semibold mb-6">Our Recipes</h2>
-      <p class="w-[400px] lg:w-[800px] mx-auto mb-8">Explore a world of flavors with our curated collection of mouthwatering recipes.
+      <p class="w-[400px] lg:w-[800px] mx-auto mb-8">Explore a world of flavors with our curated collection of
+        mouthwatering recipes.
         From appetizers to desserts, unleash your inner chef and delight your taste buds with our diverse culinary
         offerings</p>
     </div>
     <!-- card section -->
     <div>
       <!-- card-1 -->
-      
-      
+
+
     </div>
-    <div id="root"></div>
+    <div id="root"></div>    
+    <script type="module" src="/src/main.jsx"></script>
   </main>
-  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

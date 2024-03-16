@@ -21,7 +21,7 @@ const SideBar = ({ toCook,handleRemove, remove}) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {toCook.map(cook => <WantToEat cook={cook} key={cook.recipe_id} handleRemove={handleRemove}></WantToEat>)}
+                            {toCook.map((cook, index) => <WantToEat cook={cook} key={cook.recipe_id} handleRemove={handleRemove} index={index}></WantToEat>)}
                         </tbody>
                     </table>
                 </div>
@@ -39,7 +39,7 @@ const SideBar = ({ toCook,handleRemove, remove}) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {remove.map((moved, idx) => <CurrentlyCooking moved={moved} key={idx}></CurrentlyCooking>)}
+                            {remove.map((moved, index) => <CurrentlyCooking moved={moved} key={moved.recipe_id} index={index} ></CurrentlyCooking>)}
                         </tbody>
                     </table>
                 </div>
@@ -54,7 +54,6 @@ const SideBar = ({ toCook,handleRemove, remove}) => {
 };
 SideBar.propTypes = {
     toCook: PropTypes.array.isRequired,
-    count: PropTypes.number.isRequired,
     handleRemove: PropTypes.func.isRequired,
     remove: PropTypes.array.isRequired,
 
