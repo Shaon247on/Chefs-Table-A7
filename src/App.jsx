@@ -24,7 +24,7 @@ function App() {
     }
     else {
       ShowingAlert()  
-      setTimeout(HideAlert,5000)
+      setTimeout(HideAlert,3000)
     }
   }
 
