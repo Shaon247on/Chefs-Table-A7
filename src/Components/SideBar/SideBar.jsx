@@ -9,7 +9,7 @@ const SideBar = ({ toCook,handleRemove, remove}) => {
     return (
         <div className="mx-4 lg:mx-0 col-span-full lg:col-span-3 text-center pt-8">
             <div className=" pb-5 space-y-4">
-                <h1 className="text-2xl font-semibold">want to cook: {toCook.length}</h1>
+                <h1 className="text-2xl font-semibold">Want to cook: {toCook.length}</h1>
                 <div className="flex justify-between items-center">
                     <table className="w-full border-collapse text-[#282828B3]">
                         <thead className="w-80 font-medium">
@@ -27,7 +27,7 @@ const SideBar = ({ toCook,handleRemove, remove}) => {
                 </div>
             </div>
             <div className="border-b-2 border-b-black pb-5 space-y-4">
-                <h1 className="text-2xl font-semibold">want to cook: {remove.length}</h1>
+                <h1 className="text-2xl font-semibold">Currently Cooking: {remove.length}</h1>
                 <div className="flex justify-between items-center">
                     <table className="w-full border-collapse text-[#282828B3]">
                         <thead className="w-80 font-medium">
