@@ -3,7 +3,7 @@ const Card = ({card,handleToCook}) => {
     const { recipe_name, short_description, ingredients, preparing_time, calories, recipe_image } = card
     return (
         <div>
-            <div className="rounded-2xl w-[360px] bg-base-100 shadow-xl border-[#28282833] border-2 mx-6 my-5">
+            <div className="rounded-2xl w-[320px] bg-base-100 shadow-xl border-[#28282833] border-2 mx-6 my-5">
                 <figure className="p-6">
                     <img className="rounded-2xl" src={recipe_image} alt="No Image">
                     </img>

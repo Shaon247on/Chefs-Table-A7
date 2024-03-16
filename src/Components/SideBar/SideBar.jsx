@@ -5,9 +5,9 @@ const SideBar = ({ toCook,handleRemove, remove}) => {
     const times = remove.map(time=> time[0].preparing_time)
     const sum =times.reduce((total, num) =>total + num, 0)
     const calories = remove.map(time=> time[0].calories)
-    const math =calories.reduce((total, num) =>total + num, 0)
+    const math =calories.reduce((total, num) =>total + num, 0)    
     return (
-        <div className="mx-4 lg:mx-0 col-span-full lg:col-span-3  text-center pt-8">
+        <div className="mx-4 lg:mx-0 col-span-full lg:col-span-3 text-center pt-8">
             <div className=" pb-5 space-y-4">
                 <h1 className="text-2xl font-semibold">want to cook: {toCook.length}</h1>
                 <div className="flex justify-between items-center">
@@ -39,7 +39,7 @@ const SideBar = ({ toCook,handleRemove, remove}) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {remove.map((moved, index) => <CurrentlyCooking moved={moved} key={moved.recipe_id} index={index} ></CurrentlyCooking>)}
+                            {remove.map((moved, index) => <CurrentlyCooking moved={moved} key={moved[0].recipe_id} index={index} ></CurrentlyCooking>)}
                         </tbody>
                     </table>
                 </div>
